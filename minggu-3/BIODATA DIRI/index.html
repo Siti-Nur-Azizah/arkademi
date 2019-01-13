@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BIODATA DIRI</title>
+	<style type="text/css">
+		td{
+			background-color: white;
+			color: green;
+		}
+		body{
+			background-color: pink;
+		}
+		h1{
+			color: black;
+		}
+	</style>
+
+</head>
+<body>
+	<h1 align="center">BIODATA DIRI</h1>
+	<table width="1000" height="500" border="1" cellspacing="6" cellpadding="18" align="center">
+<tr align="center" bgcolor="gray">
+	<td width="174">DATA DIRI</td>
+	<td width="353">KETERANGAN</td>
+	<td width="232">FOTO</td>
+</tr>
+<tr>
+	<td>Nama</td>
+	<td id="nama">nama</td>
+	<td rowspan="10" align="center"><img src="zizah.jpg" width="250px" height="250px"></td>
+</tr>
+<tr>
+	<td>Kelas</td>
+	<td id="kelas">Kelas</td>
+</tr>
+<tr>
+	<td>Jurusan</td>
+	<td id="jurusan">Jurusan</td>
+</tr>
+<tr>
+	<td>Sekolah</td>
+	<td id="sekolah">Sekolah</td>
+</tr>
+<tr>
+	<td>Jenis Kelamin</td>
+	<td id="jenis kelamin">jenis kelamin</td>
+</tr>
+<tr>
+	<td>Tempat/Tanggal Lahir</td>
+	<td id="tmpt-lahir">tempat tanggal lahir</td>
+</tr>
+<tr>
+	<td>Alamat</td>
+	<td id="alamat">Alamat</td>
+</tr>
+<tr>
+	<td>Hobi</td>
+	<td id="hobi">Hobi</td>
+</tr>
+	</table>
+
+	<script>
+		let data = {
+			nama:"Siti Nur Azizah",
+			kelas:"XI-RPL 1",
+			jurusan:"Rekayasa Perangkat Lunak",
+			sekolah:"SMK Jakarta Pusat 1",
+			kelamin:"Perempuan",
+			lahir:"Jakarta 03 oktober 2002",
+			alamat:"Jl.Gunung Sahari IX",
+			hobi:"Berenang,Nyanyi",
+		}
+
+		let nama = document.getElementById('nama')
+		let kelas = document.getElementById('kelas')
+		let jurusan = document.getElementById('jurusan')
+		let sekolah = document.getElementById('sekolah')
+		let kelamin = document.getElementById('jenis kelamin')
+		let lahir = document.getElementById('tmpt-lahir')
+		let alamat = document.getElementById('alamat')
+		let hobi = document.getElementById('hobi')
+
+
+
+		nama.innerHTML = data.nama
+		kelas.innerHTML = data.kelas
+		jurusan.innerHTML = data.jurusan
+		sekolah.innerHTML = data.sekolah
+		kelamin.innerHTML = data.kelamin
+		lahir.innerHTML = data.lahir
+		alamat.innerHTML = data.alamat
+		hobi.innerHTML = data.hobi
+	</script>
+
+</body>
+</html>
