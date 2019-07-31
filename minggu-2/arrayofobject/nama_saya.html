@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <input id="bil1" value="2"/><br/>
+        <input id="bil2" value="4"/><br/>
+        <input id="hasil"/><br/>
+        <button onclick="hitung()">Hitung</button>
+        <script>
+           function hitung(){
+               var angka1 = parseInt(document.getElementById('bil1').value)
+               var angka2 = parseInt(document.getElementById('bil2').value)
+               var hasil = angka1 + angka2;
+               document.getElementById('hasil').value = hasil;
+           }
+        </script>
+    </body>
+</html>

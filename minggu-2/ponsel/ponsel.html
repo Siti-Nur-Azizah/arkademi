@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h3{
+            background: gray;
+            width: 700px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 30px;
+        }
+        #ponsel-azis{
+            width: 800px;
+            margin: 0 auto;
+            background-color: gray;
+            border-radius: 30px;
+        }
+        #ponsel-azis div{
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+        #ponsel-azis div .nama-ponsel{
+            display: block;
+            color: orangered;
+        }
+        #ponsel-azis div .gambar-ponsel{
+            display: block;
+            color: white;
+        }
+        #ponsel-azis div .harga-ponsel{
+            display: block;
+            color: blue;
+        }
+        #ponsel-azis div .ram-ponsel{
+            display: block;
+            color: yellow;
+        }
+        #ponsel-azis div .storage-ponsel{
+            display: block;
+            color: red;
+        }
+        #ponsel-azis div .nama-ponsel::before{
+            content: "Nama: "
+        }
+        #ponsel-azis div .gambar-ponsel::before{
+            content: "Gambar: "
+        }
+        #ponsel-azis div .harga-ponsel::before{
+            content: "Harga: "
+        }
+        #ponsel-azis div .ram-ponsel::before{
+            content: "Ram: "
+        }
+        #ponsel-azis div .storage-ponsel::before{
+            content: "Storage: "
+        }
+        </style>
+</head>
+<body>
+    <center><h3>10 Merk HP Terkenal di dunia</h3></center>
+    <div id="ponsel-azis"></div>
+    <script src="ponsel.js"></script>
+</body>
+</html>
