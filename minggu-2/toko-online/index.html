@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toko Online Baju</title>
+	<center><h1>BAJU ONLINE</h1></center>
+	<style>
+		#item-list{
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.item{
+			flex: 1;
+			border-radius:10px;
+			padding:10px;
+			margin:10px;
+			background-color: gray;
+			text-align: center;
+		}
+		.item:hover{
+			background: white;
+		}
+		.item .gambar img{
+			width: 150px;
+			height:150px;
+			margin: 30px;
+			border-radius:10px;
+		}
+	</style>
+</head>
+<body>	
+	<div id="item-list"></div>
+	<script>
+		let item =[
+			{
+				"nama":"Nevada",
+				"ukuran":"L",
+				"harga":"75.000",
+				"gambar":"poetih.jpg"
+			},
+			{
+				"nama":"Nevada",
+				"ukuran":"M",
+				"harga":"75.000",
+				"gambar":"putihitem.jpg"
+			},
+			{
+				"nama":"Nevada",
+				"ukuran":"S",
+				"harga":"75.000",
+				"gambar":"pink.jpg"
+			},
+			{
+				"nama":"full and bear",
+				"ukuran":"S",
+				"harga":"200",
+				"gambar":"full and bear.jpg"
+			},
+			{
+				"nama":" Hodie full and bear",
+				"ukuran":"S",
+				"harga":"300",
+				"gambar":"hodie.jpg"
+			},
+			{
+				"nama":" Hodie full and bear",
+				"ukuran":"L",
+				"harga":"200",
+				"gambar":"hodie full.jpg"
+			},
+			{
+				"nama":" Hodie full and bear",
+				"ukuran":"M",
+				"harga":"500",
+				"gambar":"hodiekw.jpg"
+			},
+			{
+				"nama":" Hodie full and bear",
+				"ukuran":"XL",
+				"harga":"500",
+				"gambar":"jaket.jpg"
+			},
+			{
+				"nama":"H&M",
+				"ukuran":"M",
+				"harga":"500",
+				"gambar":"H&M.jpg"
+			},
+			{
+				"nama":"GUCCI",
+				"ukuran":"L",
+				"harga":"700",
+				"gambar":"Gucci.jpg"
+			},
+			{
+				"nama":"T-shirt",
+				"ukuran":"M",
+				"harga":"150",
+				"gambar":"T-shirt.jpg"
+			},
+			{
+				"nama":"Jaket",
+				"ukuran":"L",
+				"harga":"200",
+				"gambar":"jaket-sally.jpg"
+			},
+			{
+				"nama":"Distro",
+				"ukuran":"L",
+				"harga":"175",
+				"gambar":"Distro.jpg"
+			},
+			{
+				"nama":"EFG",
+				"ukuran":"L",
+				"harga":"150",
+				"gambar":"efg.jpg"
+			},
+			{
+				"nama":"EFG",
+				"ukuran":"S",
+				"harga":"250",
+				"gambar":"kaosefg.jpg"
+			},
+			{
+				"nama":"EFG",
+				"ukuran":"M",
+				"harga":"200",
+				"gambar":"images.jpg"
+			},
+			{
+				"nama":"EFG",
+				"ukuran":"XL",
+				"harga":"145",
+				"gambar":"imagess.jpg"
+			},
+			{
+				"nama":"EFG",
+				"ukuran":"S",
+				"harga":"250",
+				"gambar":"imagesss.jpg"
+			},
+			{
+				"nama":"EFG",
+				"ukuran":"M",
+				"harga":"300",
+				"gambar":"Ergg.jpg"
+			},
+			{
+				"nama":"Flava",
+				"ukuran":"L",
+				"harga":"250",
+				"gambar":"Flava.jpg"
+			}
+
+		];
+		for(x in item){
+			let namaItem =item[x].nama;
+			let ukuranItem =item[x].ukuran;
+			let hargaItem =item[x].harga;
+			let gambarItem =item[x].gambar;
+
+			document.getElementById('item-list').innerHTML+="\
+			<div class='item'>\
+				<div class='gambar'><img src='"+gambarItem+"' alt=''/></div>\
+				<div class='nama'>"+namaItem+"</div>\
+				<div class='ukuran'>"+ukuranItem+"</div>\
+				<div class='harga'>"+hargaItem+"</div>\
+			</div>\
+			";
+				if(((x+1)/5)===0){
+					document.getElementById('item-list').innerHTML+="\
+					<div class='pemisah'></div>\
+					";
+
+				}
+				}
+	</script>
+
+</body>
+</html>

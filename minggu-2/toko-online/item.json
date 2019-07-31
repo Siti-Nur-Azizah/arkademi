@@ -1,0 +1,59 @@
+[
+	{
+		"nama":"Baju nevada",
+		"ukuran":"L",
+		"warna":"item",
+		"harga":"75.000",
+		"gambar":"item.jpeg"
+	}
+]
+
+[
+	{
+		"nama":"Baju nevada",
+		"ukuran":"M",
+		"warna":"putih-item",
+		"harga":"75.000",
+		"gambar":"putihitem.jpg"
+	}
+]
+
+[
+	{
+		"nama":"Baju nevada",
+		"ukuran":"M",
+		"warna":"putih-item",
+		"harga":"75.000",
+		"gambar":"pink.jpg"
+	}
+]
+
+[
+	{
+		"nama":"full and bear",
+		"ukuran":"S",
+		"warna":"putih-item",
+		"harga":"75.000",
+		"gambar":"pink.jpg"
+	}
+]
+
+[
+	{
+		"nama":"full and bear",
+		"ukuran":"S",
+		"warna":"putih-item",
+		"harga":"75.000",
+		"gambar":"hodie.jpg"
+	}
+]
+
+[
+	{
+		"nama":"full and bear",
+		"ukuran":"S",
+		"warna":"putih-item",
+		"harga":"75.000",
+		"gambar":"hodie full.jpg"
+	}
+]
