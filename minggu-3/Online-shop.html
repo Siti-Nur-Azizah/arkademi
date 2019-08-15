@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online-shop</title>
+	<style>
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			width: 800px;
+			margin:0 auto;
+		}
+		.item{
+			background: rgba(0,0,0,0);
+			display: flex;
+			flex-direction: row;
+			min-height: 200px;
+			padding: 20px;
+			margin-top:5px;
+			margin-bottom: 5pc;
+		}
+
+		.item .picture{
+			flex: 1;
+			height: auto;
+			width: 100px;
+			background:rgba(0,0,0,1);
+			display: flex;
+			justify-content: center;
+		}
+
+		.item .picture .thumb{
+			display: block;
+			width: 100px;
+		}
+
+		.item .text{
+			flex: 3;
+			color: rgba(0,0,0,8);
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+
+		.item .text .name{
+			color: black;
+			font-size:23px;
+			font-weight: bold;
+		}
+
+		item .text .price{
+			font-size:20px;
+			color: rgba(255,0,0,0,8);
+			font-weight: bold;
+		}
+
+		.item .text .rating{
+			font-weight: bold;
+		}
+
+		.item .text .rating::before{
+			content: "quality:"
+		}
+
+	</style>
+</head>
+<body>
+	<h1 class="judul">Online-shop</h1>
+	<div class="picture"></div>
+		<div class="thumb"></div>
+	</div>
+
+	<div class="text"></div>
+	<div class="name">nama barang</div>
+	<div class="prince"></div>
+	<div class="description"></div>
+	<script>
+	let data =[	[
+  {
+    "name":"Whiteboard",
+    "description":"",
+    "price":250000,
+    "image":[
+      "assets/papan tulis.jpg",
+      "assets/papan.jpg",
+      "assets/papan2.jpg"
+    ],
+    "rating":[
+      "0","1","21","6","22"
+    ]
+  },
+  {
+    "name":"Chair",
+    "description":"",
+    "price":130000,
+    "image":[
+      "assets/bangku.jpg",
+      "assets/bangku1.jpg",
+      "assets/bangku2.jpg"
+    ],
+    "rating":[
+      "0","50","1","2","10"
+    ]
+  },
+  {
+    "name":"Totebag",
+    "description":"",
+    "price":80000,
+    "image":[
+      "assets/tas.jpg",
+      "assets/tas1.jpg",
+      "assets/tas2.jpg"
+    ],
+    "rating":[
+      "12","0","0","0","5"
+    ]
+  },
+  {
+    "name":"Boardmarker",
+    "description":"",
+    "price":40000,
+    "image":[
+      "assets/spidol.jpg",
+      "assets/spidol1.jpg",
+      "assets/spidol2.jpg"
+    ],
+    "rating":[
+      "0","0","1","3","8"
+    ]
+  },
+  {
+    "name":"Book",
+    "description":"",
+    "price":80000,
+    "image":[
+      "assets/buku.jpg",
+      "assets/buku1.jpg",
+      "assets/buku2.jpg"
+    ],
+    "rating":[
+      "1","2","2","2","31"
+    ]
+  }
+];
+function rating(arr){
+      let current = "";
+      let rating = "";
+      let arrRating = ["Buruk","Cukup","Baik","Sangat Baik","Super"];
+      arr.reverse();
+      arr.forEach((v,i)=>{
+        if(current !=""){
+          if(current > v){
+            rating = arrRating[i]
+          }
+        }
+
+	current = v;
+	})
+	return rating;
+}
+let element ="";
+data.forEach((v,i)=>{
+	element+='\
+	<div class="item">\
+	<div class="thumb" scr"'+data[i].image[0]+'"></img>\
+	</div>\
+	<div class="text">\
+	<div class="name">'+[i].name+'</div>\
+	<div class="price"Rp.'+data[i].price+',-</div>\
+	<div class="description">'+data[i].description+'</div>\
+	<div class="rating">'+rating(data[i].rating)+'</div>\
+	</div>\
+	</div>\
+	';
+});
+document.getElementyById('item-list').innerHTML =element;
+	</script>
+
+</body>
+</html>

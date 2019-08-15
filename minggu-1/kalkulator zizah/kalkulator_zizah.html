@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>document</title>
+	<style>
+		.kontak{
+			border: 3px solid black;
+			border-radius: 5px;
+			background-color: gray;
+			margin: auto;
+			padding: 2px;
+		}
+
+		.kontak1{
+			border: 3px solid black;
+			border-radius: 5px;
+			background-color: aqua;
+			margin: auto;
+			padding: 2px;
+		}
+
+		.kontak2{
+			border: 3px solid black;
+			border-radius: 5px;
+			background-color: pink;
+			margin: auto;
+			padding: 2px;
+		}
+	</style>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="">
+
+	<div class="kontak">
+		<h3>Pertambahan</h3>
+	<input id="bil1" value="8"></br>
+	<input id="bil2" value="2"></br>
+	<input id="hasil"/></br>
+	<button onclick="hitung()">Hitung</button>
+	</div>
+	<div class="kontak1">
+		<h3>Perkalian</h3>
+	<input id="bil1" value="8"></br>
+	<input id="bil2" value="2"></br>
+	<input id="hasil"/></br>
+	<button onclick="Perkalian()">Perkalian</button>
+	</div>
+
+	<div class="kontak2">
+		<h3>Pembagian</h3>
+	<input id="bil1" value="8"></br>
+	<input id="bil2" value="2"></br>
+	<input id="hasil"/></br>
+	<button onclick="Pembagian()">pembagian</button>
+	</div>
+
+	<script>
+		function hitung(){
+			var angka1 = parseInt(document.getElementById('bil1').value)
+			var angka2 = parseInt(document.getElementById('bil2').value)
+			var hasil  = angka1+angka2;
+			document.getElementById('hasil').value = hasil;
+		}
+		function perkalian(){
+			var angka1 = parseInt(document.getElementById('bil1').value)
+			var angka2 = parseInt(document.getElementById('bil2').value)
+			var hasil  = angka1*angka2;
+			document.getElementById('hasil').value = hasil;
+		}
+		function pembagian(){
+			var angka1 = parseInt(document.getElementById('bil1').value)
+			var angka2 = parseInt(document.getElementById('bil2').value)
+			var hasil  = angka1/angka2;
+			document.getElementById('hasil').value = hasil;
+
+		}
+	</script>
+
+</body>
+</html>

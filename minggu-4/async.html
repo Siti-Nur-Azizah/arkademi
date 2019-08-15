@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+	<div id="hasil"></div>
+	<script>
+		class OutputHasil{
+			getData = async()=>{
+				let obj ={}
+				await setTimeout(()=>{
+					obj = {
+						'nama':'<nama masing masing>',
+						'kelas':'XI-RPL'
+					}
+				},5000)
+				return await obj
+			}
+			setData = async (data,hasil)=>{
+				document.getElementById(hasil).innerHTML =  await data
+			}
+		}
+
+		const OH = new OutputHasil()
+		const output = async()=>{
+			const data = await OH.getData()
+			 await OH.setData(data,'hasil')
+		}
+		output()
+		
+	</script>
+
+</body>
+</html>
