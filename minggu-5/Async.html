@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+	<div id="display"></div>
+	<script>
+		let angka = 100;
+		const tunggu = ()=>{
+			return new Promise((resolve,reject)=>{
+				document.getElementById('display').innerHTML ='Menunggu Angka...'
+					setTimeout(()=>{
+					resolve(true)
+				},5000)
+			})
+		}
+		const hitung = ()=>{
+			return new Promise((resolve,reject)=>{
+				setInterval(()=>{
+					if(angka>0){
+						angka = angka-1
+
+					}else{
+						resolve(true)
+					}
+					document.getElementById('display').innerHTML= angka
+				},1000)
+			})
+		}
+		const hitungMundur = async()=>{
+			const penunggu = await tunggu()
+			if(penunggu === true){
+				await hitung()
+			}
+			console.log('finish')
+		}
+		hitungMundur()
+	</script>
+
+</body>
+</html>
