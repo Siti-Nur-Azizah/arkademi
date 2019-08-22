@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rest API Consumtion</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="display">
+		
+	</div>
+	<script>
+		fetch('https://rickandmortyapi.com/api/character')
+		.then((response)=>{
+			const retrieve = async()=>{
+			const data =  await response.json()
+				const {results} = data
+				console.log(results)
+			for( let x in results){
+				document.getElementById('display').innerHTML+='<div>'+results[x].name+'</div>\
+				<div>\
+				<image src="'+results[x].image+'" />\
+				</div>' 
+			}
+			}
+			retrieve()
+		})
+	</script>
+
+</body>
+</html>

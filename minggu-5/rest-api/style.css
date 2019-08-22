@@ -1,0 +1,26 @@
+
+body{
+	background-color: pink;
+	color:black;
+	text-align:center; 
+	margin: 10px;
+}
+img{
+	border-radius: 50px;
+	height: 150px;
+	width: 150px;
+	flex: wrap;
+}
+.kotak{
+	height: 300px;
+	width: 300px;
+	background-color: green;
+
+}
+#display{
+	position: absolute;
+	display: flex;
+	margin: 10px;
+	flex-wrap: wrap;
+	
+}
