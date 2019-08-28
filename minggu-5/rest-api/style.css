@@ -1,7 +1,7 @@
 
 body{
 	background-color: pink;
-	color:black;
+	color: black;
 	text-align:center; 
 	margin: 10px;
 }
@@ -14,7 +14,7 @@ img{
 .kotak{
 	height: 300px;
 	width: 300px;
-	background-color: green;
+	background-color: pink;
 
 }
 #display{

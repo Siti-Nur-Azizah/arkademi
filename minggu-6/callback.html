@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		const kendaraan = (motor,mobil,callback)=>{
+			return callback(motor,mobil);
+		}
+
+		const dataKendaraan = kendaraan(' Harley davidson', ' Lamborghini',(motor, mobil)=>{
+			return mobil + motor;
+		});
+
+		console.log(dataKendaraan);
+	</script>
+
+</body>
+</html>
