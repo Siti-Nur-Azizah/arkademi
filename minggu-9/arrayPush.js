@@ -5,6 +5,3 @@ const arrayPushHewan = async () =>{
 }
 
 arrayPushHewan();
-/*NOTE:
-Array map adalah fungsi perulangan array seperti for in dan foreach
-*/
