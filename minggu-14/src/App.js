@@ -1,27 +1,23 @@
-import React, { Component } from"react";
+import React, {Component} from 'react';
+import{
+    BrowserRouter,
+    Route,
+    Switch
+} from "react-router-dom"
+import Landing from "./landing";
 
 class App extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-           count: 0
-            }
-        };
-
-handleClick() {
-    this.setState({ count: this.state.count + 1});
-    this.setState({ count: this.state.count - 1});
-}
-
-render() {
-    return (
-        <div>
-        <p>{this.state.count}</p>
-        <button onClick={() => this.handleClick()}>Button</button>
-        <button onClick={() => this.handleClick()}>Button</button>
-        </div>
-    );
-  }
+    render(){
+        return(
+            <BrowserRouter>
+            <Switch>
+                <Landing></Landing>
+            </Switch>
+            </BrowserRouter>
+        )
+    }
 }
 
 export default App;
+
+
